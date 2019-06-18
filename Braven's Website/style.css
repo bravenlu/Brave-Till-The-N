@@ -1,0 +1,114 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color:black;
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    font-family: 'Press Start 2P';
+    color:white;
+    font-size: 3em;
+    position:fixed;
+    top: 200px;
+    left: 230px;
+}
+
+a {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    font-family: 'Press Start 2P';
+    position: fixed;
+    letter-spacing: 0.1em;
+    animation-name:fadein;
+    animation-duration: 6s;
+    border: white solid medium;
+    padding:20px;
+    border-radius:30px;
+    transition: background 0.2s ease-in;
+    left: 530px;
+    top: 630px;
+    text-decoration:none;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+img.walking {
+    position: fixed;
+    top:0px;
+    left:0px;
+    animation-name: walkleft;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    opacity:0;
+}
+
+img.world {
+    position: fixed;
+    top: 50px;
+    left: 220px;
+}
+
+section span:nth-child(1) {
+    animation: animateOne 3.5s linear;
+}
+
+section span:nth-child(2) {
+    animation: animateTwo 3.5s linear;
+}
+
+section span:nth-child(3) {
+    animation: animateThree 3.5s linear;
+}
+
+section span:nth-child(4) {
+    animation: animateFour 3.5s linear;
+}
+
+@keyframes animateOne {
+    0%{opacity:0;}
+    25%{opacity:1;}
+    100%{opacity:1;}
+}
+
+@keyframes animateTwo {
+    0%{opacity:0;}
+    25%{opacity:0;}
+    50%{opacity:1;}
+    100%{opacity:1;}
+}
+
+@keyframes animateThree {
+    0%{opacity:0;}
+    50%{opacity:0;}
+    60%{opacity:1;}
+    100%{opacity:1;}
+}
+
+@keyframes animateFour {
+    0%{opacity:0;}
+    60%{opacity:0;}
+    75%{opacity:1;}
+    100%{opacity:1;}
+}
+
+@keyframes walkleft {
+    0%{opacity:0;}
+    10%{opacity:1;}
+    90%{opacity:1;left:920px;}
+    100%{opacity:0;left:920px;}
+}
+
+@keyframes fadein {
+    0%{opacity:0;}
+    56%{opacity:0;}
+    100%{opacity:1;}
+}
