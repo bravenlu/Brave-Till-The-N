@@ -1,0 +1,87 @@
+html, 
+body {
+    padding:0;
+    margin:0;
+    height:100%;
+    width:100%;
+    background-color:#F88379;
+    font-family: 'Press Start 2P';
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+        "left nav right"
+        "left profile right"
+        "left slogan right";
+}
+.profile {
+    grid-area: profile;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan {
+    grid-area: slogan;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+.nav {
+    grid-area: nav;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    font-size: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "home about contact"
+}
+
+.home {
+    grid-area: home;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 50px;
+    margin: 0px;
+}
+
+.about {
+    grid-area: about;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 50px;
+}
+
+.contact {
+    grid-area: contact;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 50px;
+    margin: 0px;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+

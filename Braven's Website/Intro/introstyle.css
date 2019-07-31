@@ -51,7 +51,7 @@ a {
     font-size: 2em;
     letter-spacing: 0.1em;
     animation-name:fadein;
-    animation-duration: 3s;
+    animation-duration: 4s;
     border: white solid medium;
     padding:20px;
     border-radius:30px;
@@ -67,7 +67,6 @@ a:hover {
 }
 
 .stripe1 {
-    text-orientation: upright;
     grid-area: stripe1;
     background-color: black;
     display: grid;
@@ -85,6 +84,14 @@ a:hover {
 
 .chars1 {
     grid-area: chars1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadein;
+    animation-duration: 3s;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
 }
 
 .last1 {
@@ -94,7 +101,6 @@ a:hover {
 .stripe2 {
     grid-area: stripe2;
     background-color: black;
-    color:white;
     display:grid;
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas: 
@@ -109,6 +115,14 @@ a:hover {
 
 .chars2 {
     grid-area: chars2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadein;
+    animation-duration: 3s;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
 }
 
 .last2 {
