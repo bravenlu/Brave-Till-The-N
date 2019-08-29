@@ -1,10 +1,10 @@
-html, 
+html,
 body {
-    padding:0;
-    margin:0;
-    height:100%;
-    width:100%;
-    background-color:#F88379;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F88379;
     font-family: 'Press Start 2P';
 }
 
@@ -12,25 +12,21 @@ body {
     display: grid;
     justify-items: center;
     align-content: center;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 3fr;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas:
-        "left nav right"
-        "left profile right"
-        "left slogan right";
+    grid-template-areas: ". nav ." ". profile .";
 }
 
 .profile {
     grid-area: profile;
     width: 100%;
-    height: 100%;
-    display:flex;
+    height: 85%;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
     border: white solid;
-    border-radius: 10%;
-    padding: 10px;
+    border-radius: 2vmin;
 }
 
 .left {
@@ -52,12 +48,12 @@ body {
     align-content: center;
     font-size: 1.5em;
     margin: 20px;
+    margin-top: 50px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "home about contact";
+    grid-template-areas: "home about contact";
 }
 
-.nav > a {
+.nav>a {
     text-decoration: none;
     color: white;
     padding: 15px;
@@ -66,7 +62,7 @@ body {
     line-height: 2.0;
 }
 
-.nav > a:hover {
+.nav>a:hover {
     color: black;
     background-color: white;
 }
@@ -93,14 +89,11 @@ body {
 .container {
     z-index: 1;
     display: grid;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "propic status status"
-        "desc desc desc"
-        "desc desc desc";
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "propic status status" "desc desc desc";
 }
 
 .propic {
@@ -110,7 +103,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    border-right: white solid; 
+    border-right: white solid;
 }
 
 .status {
@@ -125,10 +118,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-    font-size: 1.2em;
     border-top: white solid;
+    padding: 10px;
+    margin: 20px;
+}
+
+.desc p {
+    height: 250px;
     color: white;
     line-height: 1.5;
-    
+    font-size: 1.2em;
+    overflow: scroll;
 }

@@ -1,10 +1,10 @@
-html, 
+html,
 body {
-    padding:0;
-    margin:0;
-    height:100%;
-    width:100%;
-    background-color:#F88379;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F88379;
     font-family: 'Press Start 2P';
 }
 
@@ -12,23 +12,21 @@ body {
     display: grid;
     justify-items: center;
     align-content: center;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas:
-        "left nav right"
-        "left profile right"
-        "left slogan right";
+    grid-template-areas: ". nav ." ". profile ."
 }
+
 .profile {
     grid-area: profile;
     width: 100%;
-    height: 100%;
-    display:flex;
+    height: 90%;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
     border: white solid;
-    border-radius: 10%;
+    border-radius: 2vmin;
     padding: 10px;
 }
 
@@ -50,13 +48,12 @@ body {
     justify-items: center;
     align-content: center;
     font-size: 1.5em;
-    margin: 20px;
+    margin: 40px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "home about contact";
+    grid-template-areas: "home about contact";
 }
 
-.links > a {
+.links>a {
     text-decoration: none;
     color: white;
     padding: 30px;
@@ -65,11 +62,11 @@ body {
     line-height: 2.0;
 }
 
-.links > a:hover {
+.links>a:hover {
     color: black;
 }
 
-.nav > a {
+.nav>a {
     text-decoration: none;
     color: white;
     padding: 15px;
@@ -78,7 +75,7 @@ body {
     line-height: 2.0;
 }
 
-.nav > a:hover {
+.nav>a:hover {
     color: black;
     background-color: white;
 }
@@ -105,11 +102,10 @@ body {
 .container {
     z-index: 1;
     display: grid;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-        "logos links";
+    grid-template-areas: "logos links";
 }
 
 .logos {
@@ -117,7 +113,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 30px;
+    padding: 20px;
     justify-content: space-evenly;
 }
 
@@ -131,6 +127,6 @@ body {
     justify-content: space-evenly;
 }
 
-.logos > img {
+.logos>img {
     margin: 30px;
 }

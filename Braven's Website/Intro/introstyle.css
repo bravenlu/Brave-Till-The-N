@@ -1,6 +1,9 @@
-body, html {
+body,
+html {
     height: 100vh;
+    background-color: #F88379;
 }
+
 body {
     height: 100%;
     padding: 0px;
@@ -10,15 +13,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 7fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "left stripe1 title stripe2 right"
-        "left stripe1 middle stripe2 right"
-        "left stripe1 bottom stripe2 right";
+    grid-template-areas: "left stripe1 title stripe2 right" "left stripe1 middle stripe2 right" "left stripe1 bottom stripe2 right";
 }
 
 .title {
     grid-area: title;
-    color:white;
+    color: white;
     font-size: 3em;
     animation-name: fadein;
     animation-duration: 1s;
@@ -34,7 +34,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation-name:fadein;
+    animation-name: fadein;
     animation-duration: 2s;
 }
 
@@ -50,13 +50,13 @@ a {
     color: white;
     font-size: 2em;
     letter-spacing: 0.1em;
-    animation-name:fadein;
+    animation-name: fadein;
     animation-duration: 4s;
     border: white solid medium;
-    padding:20px;
-    border-radius:30px;
+    padding: 20px;
+    border-radius: 30px;
     transition: background 0.2s ease-in;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 a:hover {
@@ -72,10 +72,7 @@ a:hover {
     display: grid;
     color: white;
     grid-template-rows: 1fr 3fr 1fr;
-    grid-template-areas: 
-        "first1"
-        "chars1"
-        "last1"
+    grid-template-areas: "first1" "chars1" "last1"
 }
 
 .first1 {
@@ -101,12 +98,9 @@ a:hover {
 .stripe2 {
     grid-area: stripe2;
     background-color: black;
-    display:grid;
+    display: grid;
     grid-template-rows: 1fr 3fr 1fr;
-    grid-template-areas: 
-        "first2"
-        "chars2"
-        "last2"
+    grid-template-areas: "first2" "chars2" "last2"
 }
 
 .first2 {
@@ -129,10 +123,14 @@ a:hover {
     grid-area: last2;
 }
 
-
-
 @keyframes fadein {
-    0%{opacity:0;}
-    56%{opacity:0;}
-    100%{opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    56% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
